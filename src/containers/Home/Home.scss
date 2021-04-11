@@ -71,5 +71,26 @@
             }
         }
     }
+    .home-intro {
+        background-image: url('../../assets/img/intro-bg.svg');
+        padding: 30px;
+        .dec-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            p {
+                opacity: 0.8;
+                color: #dde2ff;
+            }
+            button {
+                border-radius: 25px;
+                padding: 10px 18px;
+                border-color: transparent !important;
+                margin-right: 20px;
+                width: 180px;
+            }
+        }
+    }
     
 }

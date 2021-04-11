@@ -7,6 +7,8 @@ import creatorImg from '../../assets/img/creator-icon.svg';
 import holdersImg from '../../assets/img/holders-icon.svg';
 import rightArrowImg from '../../assets/img/arrow-right-ic.svg';
 import rightArrowBlueImg from '../../assets/img/arrow-right-ic-b.svg';
+import introTopImg from '../../assets/img/intro-top.svg';
+import introBottomImg from '../../assets/img/intro-bottom.svg';
 
 function Home() {
     return (
@@ -33,42 +35,79 @@ function Home() {
                 <Container>
                     <div className="offer-head text-center">
                         <h1 className="gothic-700-48 text-black">What do we <span>offer?</span></h1>
-                        <div className="gothic-400-16">Individuals can buy and trade tokens of their favourite people to profit off as first movers and gain 
-                        access to exclusive content. Think of it as Onlyfans on the blockchain and instead of subscriptions, fans can own creator tokens and 
+                        <div className="gothic-400-16">Individuals can buy and trade tokens of their favourite people to profit off as first movers and gain
+                        access to exclusive content. Think of it as Onlyfans on the blockchain and instead of subscriptions, fans can own creator tokens and
                         creators can own their content and trade it as Non Fungible Tokens on the platform.</div>
                     </div>
                     <div className="holder-creator-container">
                         <div className="row">
                             <div className="col-sm-6">
                                 <div className="creator-wrap">
-                                    <img src={creatorImg} alt=""/>
+                                    <img src={creatorImg} alt="" />
                                     <h1 className="gothic-700-36">For <a href="" className="text-green">Creators</a></h1>
                                     <div className="card-content gothic-400-16">
-                                        Creators can gain independence through a decentralized personal digital currency system that is linked with their growth 
-                                        and engagement with their community. On top of this, creators build their content as NFTs which they distribute through 
+                                        Creators can gain independence through a decentralized personal digital currency system that is linked with their growth
+                                        and engagement with their community. On top of this, creators build their content as NFTs which they distribute through
                                         their own ecosystem with their digital currency being the backbone of that system.
                                     </div>
                                     <a href="" className="text-green .gothic-700-16">Learn More</a>
-                                    <img src={rightArrowImg} className="arrow-icon" alt=""/>
+                                    <img src={rightArrowImg} className="arrow-icon" alt="" />
                                 </div>
                             </div>
                             <div className="col-sm-6">
                                 <div className="creator-wrap">
-                                    <img src={holdersImg} alt=""/>
+                                    <img src={holdersImg} alt="" />
                                     <h1 className="gothic-700-36">For <a href="" className="text-blue">Creators</a></h1>
                                     <div className="card-content gothic-400-16">
-                                        Creators can gain independence through a decentralized personal digital currency system that is linked with their growth 
-                                        and engagement with their community. On top of this, creators build their content as NFTs which they distribute through 
+                                        Creators can gain independence through a decentralized personal digital currency system that is linked with their growth
+                                        and engagement with their community. On top of this, creators build their content as NFTs which they distribute through
                                         their own ecosystem with their digital currency being the backbone of that system.
                                     </div>
                                     <a href="" className="text-blue .gothic-700-16">Learn More</a>
-                                    <img src={rightArrowBlueImg} className="arrow-icon" alt=""/>
+                                    <img src={rightArrowBlueImg} className="arrow-icon" alt="" />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </Container>
 
+            </div>
+            <div className="home-intro">
+                <div className="dec-container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <img src={introTopImg} className="w-50" />
+                        </div>
+                        <div className="col-md-6">
+                            <div className="dec-content text-left">
+                                <h1 className="gothic-700-48 text-white">Decentralized social media would be led by celebrities</h1>
+                                <p className="gothic-400-16">One of the things that we understand deeply at Weentar is that real adoption happens when the
+                                relevant people campaign for it. Our strategy to become the top social media 3.0 platform will
+                                be our campaign to onboard celebrities, influencers and creators of all genres in various countries
+                             to spread the word of mouth regarding this revolution.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="dec-container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <div className="dec-content text-left">
+                                <h1 className="gothic-700-48 text-white">Market size</h1>
+                                <p className="gothic-400-16">There are over 50 million self identified creators in the social media space. Over a million of
+                                these are celebrities in different countries around the world. What does this mean? It means that there is a potential for
+                                50 million communities on Weentar. A bullet proof concept and the right publicity might lead to a vast majority of these 50
+                                million joining the platform by the end of the decade. Once the superiority of our platform is recognised by the right minds,
+                                 the growth of the platform tends to become exponential.</p>
+                                 <button className="btn-green gothic-700-16">Connect wallet</button>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <img src={introBottomImg} className="w-50" />
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     );
