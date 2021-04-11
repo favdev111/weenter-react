@@ -3,6 +3,10 @@ import { Button, Navbar, Nav, Form, FormControl, Container } from 'react-bootstr
 
 import './Home.scss';
 import bannerImg from '../../assets/img/home-banner.svg';
+import creatorImg from '../../assets/img/creator-icon.svg';
+import holdersImg from '../../assets/img/holders-icon.svg';
+import rightArrowImg from '../../assets/img/arrow-right-ic.svg';
+import rightArrowBlueImg from '../../assets/img/arrow-right-ic-b.svg';
 
 function Home() {
     return (
@@ -24,6 +28,47 @@ function Home() {
                         <img src={bannerImg} />
                     </div>
                 </div>
+            </div>
+            <div className="home-offer">
+                <Container>
+                    <div className="offer-head text-center">
+                        <h1 className="gothic-700-48 text-black">What do we offer?</h1>
+                        <div className="gothic-400-16">Individuals can buy and trade tokens of their favourite people to profit off as first movers and gain 
+                        access to exclusive content. Think of it as Onlyfans on the blockchain and instead of subscriptions, fans can own creator tokens and 
+                        creators can own their content and trade it as Non Fungible Tokens on the platform.</div>
+                    </div>
+                    <div className="holder-creator-container">
+                        <div className="row">
+                            <div className="col-sm-6">
+                                <div className="creator-wrap">
+                                    <img src={creatorImg} alt=""/>
+                                    <h1 className="gothic-700-36">For <a href="" className="text-green">Creators</a></h1>
+                                    <div className="card-content gothic-400-16">
+                                        Creators can gain independence through a decentralized personal digital currency system that is linked with their growth 
+                                        and engagement with their community. On top of this, creators build their content as NFTs which they distribute through 
+                                        their own ecosystem with their digital currency being the backbone of that system.
+                                    </div>
+                                    <a href="" className="text-green .gothic-700-16">Learn More</a>
+                                    <img src={rightArrowImg} className="arrow-icon" alt=""/>
+                                </div>
+                            </div>
+                            <div className="col-sm-6">
+                                <div className="creator-wrap">
+                                    <img src={holdersImg} alt=""/>
+                                    <h1 className="gothic-700-36">For <a href="" className="text-blue">Creators</a></h1>
+                                    <div className="card-content gothic-400-16">
+                                        Creators can gain independence through a decentralized personal digital currency system that is linked with their growth 
+                                        and engagement with their community. On top of this, creators build their content as NFTs which they distribute through 
+                                        their own ecosystem with their digital currency being the backbone of that system.
+                                    </div>
+                                    <a href="" className="text-blue .gothic-700-16">Learn More</a>
+                                    <img src={rightArrowBlueImg} className="arrow-icon" alt=""/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Container>
+
             </div>
         </div>
     );
