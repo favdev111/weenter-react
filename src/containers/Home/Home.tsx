@@ -32,7 +32,7 @@ function Home() {
             <div className="home-offer">
                 <Container>
                     <div className="offer-head text-center">
-                        <h1 className="gothic-700-48 text-black">What do we offer?</h1>
+                        <h1 className="gothic-700-48 text-black">What do we <span>offer?</span></h1>
                         <div className="gothic-400-16">Individuals can buy and trade tokens of their favourite people to profit off as first movers and gain 
                         access to exclusive content. Think of it as Onlyfans on the blockchain and instead of subscriptions, fans can own creator tokens and 
                         creators can own their content and trade it as Non Fungible Tokens on the platform.</div>
