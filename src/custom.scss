@@ -1,0 +1,11 @@
+$theme-colors: (
+  "green": #22a75d,
+  "blue": #2278d4,
+  "black": #0f1320,
+  "white": #ffffff,
+  "yellow": #ffd100,
+  "red": #e20613,
+);
+@import './assets/font/fonts';
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
