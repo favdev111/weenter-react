@@ -1,13 +1,13 @@
 import React from 'react';
-import { Button, Navbar, Nav, Form, FormControl, NavDropdown, Image } from 'react-bootstrap';
+import { Button, Navbar, Nav, Container, FormControl, NavDropdown, Image } from 'react-bootstrap';
 
 import logo from "../../assets/img/logo.png";
 import './Header.scss';
 
 function Header() {
     return (
-        <div className="container">
-            <Navbar>
+        <Container>
+            <Navbar expand="lg">
                 <Navbar.Brand href="#home">
                     <Image src={logo} />
                 </Navbar.Brand>
@@ -22,7 +22,7 @@ function Header() {
                     <Button variant="outline-green gothic-400-16 border-btn">Connect wallet</Button>
                 </Navbar.Collapse>
             </Navbar>
-        </div>
+        </Container>
     );
 }
 

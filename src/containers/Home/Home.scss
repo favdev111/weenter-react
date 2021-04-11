@@ -1,0 +1,29 @@
+.home-container {
+    padding: 5px 20px;
+    .home-banner {
+        .title-container {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h6 {
+                color: #dde2ff;
+                opacity: 0.6;
+                margin-bottom: 20px;
+            }
+            button {
+                border-radius: 25px;
+                padding: 10px 18px;
+                border-color: transparent !important;
+                margin-right: 20px;
+            }
+        }
+        .image-container {
+            img {
+                width: 100%;
+                margin-right: -70px;
+            }
+        }
+    }
+    
+}

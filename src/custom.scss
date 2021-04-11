@@ -6,6 +6,10 @@ $theme-colors: (
   "yellow": #ffd100,
   "red": #e20613,
 );
+$container-max-widths: (
+  'xl': 1700px,
+);
+
 @import './assets/font/fonts';
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
