@@ -16,6 +16,7 @@ import roadYellow from '../../assets/img/road-yellow.svg';
 import roadRed from '../../assets/img/road-red.svg';
 import logoMark from '../../assets/img/logo-mark.svg';
 import comingImg from '../../assets/img/coming-img.svg';
+import serviceImg from '../../assets/img/service-img.svg';
 
 function Home() {
     return (
@@ -338,7 +339,61 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="how-buy"></div>
+                    <div className="how-buy">
+                        <Container>
+                            <div className="row">
+                                <div className="col-md-5">
+                                    <div className="buy-text">
+                                        <h1 className="gothic-700-48 text-white">How to buy</h1>
+                                        <div className="service-wrap">
+                                            <div className="service-one-wrap">
+                                                <div className="service-badge bg-green text-white">
+                                                    01
+                                                </div>
+                                                <div className="service-text">
+                                                    <h2 className="gothic-700-26 text-white">Connect</h2>
+                                                    <div className="text-white">
+                                                        First Connect your Metamask or TrustWallet to the "Connect Wallet" on the 
+                                                        Homepage.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="service-one-wrap">
+                                                <div className="service-badge bg-green text-white">
+                                                    02
+                                                </div>
+                                                <div className="service-text">
+                                                    <h2 className="gothic-700-26 text-white">Top Up</h2>
+                                                    <div className="text-white">
+                                                        Then send minimum of 0.1 BNB or maximum of 20 BNB to the Presale wallet
+                                                    </div>
+                                                    <p className="mt-2">
+                                                        <span className="text-green">PRESALE WALLET</span> <br/>
+                                                        <span className="text-white">0xCd35fa70CD2111985ae6F77c939b516f248e6935</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div className="service-one-wrap">
+                                                <div className="service-badge bg-green text-white">
+                                                    03
+                                                </div>
+                                                <div className="service-text">
+                                                    <h2 className="gothic-700-26 text-white">Enjoy</h2>
+                                                    <div className="text-white">
+                                                    Then after you will received your $WNTR to your address within 24hours.                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-7">
+                                    <div className="service-img">
+                                        <img src={serviceImg} alt=""/>
+                                    </div>
+                                </div>
+                            </div>
+                        </Container>
+                    </div>
                     <Footer />
                 </div>
             </div>

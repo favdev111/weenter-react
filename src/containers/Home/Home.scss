@@ -245,6 +245,40 @@
                 }
                 
             }
+            .how-buy {
+                padding: 100px 0;
+                .buy-text {
+                    text-align: left;
+                    padding: 45px;
+                    .service-wrap {
+                        .service-one-wrap {
+                            display: flex;
+                            align-items: baseline;
+                            justify-content: space-between;
+                            margin-top: 50px;
+                            .service-badge {
+                                width: 56px;
+                                height: 56px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 50%;
+                            }
+                            .service-text {
+                                width: 80%;
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+                .service-img {
+                    img {
+                        width: 100%;
+                    }
+                    
+                }
+                
+            }
         }
     }
     
