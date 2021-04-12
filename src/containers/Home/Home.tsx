@@ -9,6 +9,10 @@ import rightArrowImg from '../../assets/img/arrow-right-ic.svg';
 import rightArrowBlueImg from '../../assets/img/arrow-right-ic-b.svg';
 import introTopImg from '../../assets/img/intro-top.svg';
 import introBottomImg from '../../assets/img/intro-bottom.svg';
+import roadGreen from '../../assets/img/road-green.svg';
+import roadBlue from '../../assets/img/road-blue.svg';
+import roadYellow from '../../assets/img/road-yellow.svg';
+import roadRed from '../../assets/img/road-red.svg';
 
 function Home() {
     return (
@@ -80,7 +84,7 @@ function Home() {
                         </div>
                         <div className="col-md-6">
                             <div className="dec-content text-left">
-                                <h1 className="gothic-700-48 text-white">Decentralized social media would be led by celebrities</h1>
+                                <h1 className="gothic-700-48 text-white">Decentralized social media would be led by <span>celebrities</span></h1>
                                 <p className="gothic-400-16">One of the things that we understand deeply at Weentar is that real adoption happens when the
                                 relevant people campaign for it. Our strategy to become the top social media 3.0 platform will
                                 be our campaign to onboard celebrities, influencers and creators of all genres in various countries
@@ -99,13 +103,114 @@ function Home() {
                                 50 million communities on Weentar. A bullet proof concept and the right publicity might lead to a vast majority of these 50
                                 million joining the platform by the end of the decade. Once the superiority of our platform is recognised by the right minds,
                                  the growth of the platform tends to become exponential.</p>
-                                 <button className="btn-green gothic-700-16">Connect wallet</button>
+                                <button className="btn-green gothic-700-16">Connect wallet</button>
                             </div>
                         </div>
                         <div className="col-md-6">
                             <img src={introBottomImg} className="w-50" />
                         </div>
 
+                    </div>
+                </div>
+            </div>
+            <div className="road-map">
+                <h1 className="gothic-700-48">Road map</h1>
+                <div className="card-list">
+                    <div className="card-container">
+                        <div className="green-overlay"></div>
+                        <div className="card-wrap">
+                            <div className="card-img text-left">
+                                <img src={roadGreen} alt="" />
+                            </div>
+                            <div className="card-content text-left">
+                                <div className="card-row">
+                                    <div className="text-green">01</div>
+                                    <div className="card-des">Team set-up</div>
+                                </div>
+                                <div className="card-row">
+                                    <div className="text-green">02</div>
+                                    <div className="card-des">Launch of informational website</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-container">
+                        <div className="blue-overlay"></div>
+                        <div className="card-wrap">
+                            <div className="card-img text-left">
+                                <img src={roadBlue} alt="" />
+                            </div>
+                            <div className="card-content text-left">
+                                <div className="card-row">
+                                    <div className="text-blue">01</div>
+                                    <div className="card-des">Presale and exchange listings</div>
+                                </div>
+                                <div className="card-row">
+                                    <div className="text-blue">02</div>
+                                    <div className="card-des">Blockchain development and launch</div>
+                                </div>
+                                <div className="card-row">
+                                    <div className="text-blue">03</div>
+                                    <div className="card-des">Launch of our MVP</div>
+                                </div>
+                                <div className="card-row">
+                                    <div className="text-blue">04</div>
+                                    <div className="card-des">Influencer agency partnerships</div>
+                                </div>
+                                <div className="card-row">
+                                    <div className="text-blue">05</div>
+                                    <div className="card-des">Marketing and promotion</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-container">
+                        <div className="yellow-overlay"></div>
+                        <div className="card-wrap">
+                            <div className="card-img text-left">
+                                <img src={roadYellow} alt="" />
+                            </div>
+                            <div className="card-content text-left">
+                                <div className="card-row">
+                                    <div className="text-yellow">01</div>
+                                    <div className="card-des">Celebrity, Creator and Influencer partnerships</div>
+                                </div>
+                                <div className="card-row">
+                                    <div className="text-yellow">02</div>
+                                    <div className="card-des">Expansion of creator communities on our platform</div>
+                                </div>
+                                <div className="card-row">
+                                    <div className="text-yellow">03</div>
+                                    <div className="card-des">More Marketing and promotion</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="card-container">
+                        <div className="red-overlay"></div>
+                        <div className="card-wrap">
+                            <div className="card-img text-left">
+                                <img src={roadRed} alt="" />
+                            </div>
+                            <div className="card-content text-left">
+                                <div className="card-row">
+                                    <div className="text-red">01</div>
+                                    <div className="card-des">Mainstream partnerships</div>
+                                </div>
+                                <div className="card-row">
+                                    <div className="text-red">02</div>
+                                    <div className="card-des">500 active creator communitiesh</div>
+                                </div>
+                                <div className="card-row">
+                                    <div className="text-red">03</div>
+                                    <div className="card-des">2 Million active community members</div>
+                                </div>
+                                <div className="card-row">
+                                    <div className="text-red">04</div>
+                                    <div className="card-des">More Marketing and promotion</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

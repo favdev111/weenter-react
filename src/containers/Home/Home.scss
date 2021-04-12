@@ -79,6 +79,17 @@
             flex-direction: column;
             justify-content: center;
             height: 100%;
+            h1{
+                span{
+                    position: relative;
+                    &:after {
+                        content: url('../../assets/img/green-circles.svg');
+                        position: absolute;
+                        right: -25px;
+                        top: -3px;
+                    }
+                }
+            }
             p {
                 opacity: 0.8;
                 color: #dde2ff;
@@ -90,6 +101,66 @@
                 margin-right: 20px;
                 width: 180px;
             }
+            
+        }
+    }
+    .road-map {
+        background-color: #fafafa;
+        padding: 50px 0;
+        .card-list {
+            display: flex;
+            padding-top: 30px;
+            .card-container {
+                width: 25%;
+                position: relative;
+                .green-overlay {
+                    position: absolute;
+                    width: 100%;
+                    opacity: 0.1;
+                    height: 100%;
+                    background: linear-gradient(rgba(34, 167, 93, 1),rgba(34, 167, 93, 0.02));
+                } 
+                .blue-overlay {
+                    position: absolute;
+                    width: 100%;
+                    opacity: 0.1;
+                    height: 100%;
+                    background: linear-gradient(#2278D4, rgba(34, 120, 212, 0.02));
+                } 
+                .red-overlay {
+                    position: absolute;
+                    width: 100%;
+                    opacity: 0.1;
+                    height: 100%;
+                    background: linear-gradient(rgba(226, 6, 19, 1), rgba(226, 6, 19, 0.02));
+                }
+                .yellow-overlay {
+                    position: absolute;
+                    width: 100%;
+                    opacity: 0.1;
+                    height: 100%;
+                    background: linear-gradient(rgba(255, 209, 0, 1), rgba(255, 209, 0, 0.02));
+                }
+                .card-wrap {
+                    width: 100%;
+                    padding: 30px 10px 80px 20px;
+                    .card-content {
+                        padding-left: 40px;
+                        padding-top: 17px;
+                        .card-row {
+                            display: flex;
+                            .card-des {
+                                margin-left: 15px;
+                                color: #434b63;
+                                font-size: 16px;
+                                font-weight: 400;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+            
         }
     }
     
