@@ -1,7 +1,8 @@
 import React from 'react';
-import { Button, Navbar, Nav, Form, FormControl, Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 
 import './Home.scss';
+import {Footer} from '../../components/Footer/Footer';
 import bannerImg from '../../assets/img/home-banner.svg';
 import creatorImg from '../../assets/img/creator-icon.svg';
 import holdersImg from '../../assets/img/holders-icon.svg';
@@ -27,7 +28,7 @@ function Home() {
                         <h6 className="gothic-700-16 text-gray">We are creating social media 3.0 with influencers, celebrities and creators being able to
                         launch their own digital currency by simply creating a profile with media content posted as Non
                             fungible Tokens that can be owned and traded on the weentar network</h6>
-                        <div button-group>
+                        <div className="button-group">
                             <button className="btn-green gothic-700-16">Connect wallet</button>
                             <a href="" className="gothic-700-16 text-white">Read Lightpaper</a>
                         </div>
@@ -241,6 +242,105 @@ function Home() {
                         </div>
                     </div>
                 </Container>
+            </div>
+            <div className="overlap-with-footer">
+                <div className="withFooter">
+                    <div className="presale text-center">
+                        <div className="pre-detail">
+                            <div className="pre-header">
+                                <h1 className="gothic-700-48">Presale details</h1>
+                                <div className="presale-content gothic-400-16">
+                                    We have a supply of 1.950.000.000 tokens for the ICO which should be distributed through 3 phases. The 
+                                    following list depicts the initial plan of how to distribute tokens over the 3 phases on how to price the
+                                    token during each phase. If the first phase will be a huge success, we might increase the price per token in later phases
+                                </div>
+                                <div className="wallet-info mt-2">
+                                    <p className="gothic-700-20 text-green mb-0">PRESALE WALLET</p>
+                                    <p className="gothic-700-20 text-black">0xCd35fa70CD2111985ae6F77c939b516f248e6935</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="pre-card-container">
+                            <div className="card-one-container border-blue">
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <div className="gothic-700-32 text-blue">Phase One</div>
+                                        <div className="text-black font-weight-bold">1BNB = 56,250 WNTR</div>
+                                    </div>
+                                    <div className="gothic-400-16 text-secondary">April 16th to April 23rd 2021</div>
+                                </div>
+                                <div className="text-left mt-3">
+                                    <div className="gothic-400-16 text-secondary">Available</div>
+                                    <h1 className="gothic-700-32">
+                                    450,000,000 WNTR
+                                    </h1>
+                                </div>
+                                <div className="c-price d-flex justify-content-between align-items-center mt-1">
+                                    <div className="text-left">
+                                        <div className="gothic-400-16 text-secondary">Soft Cap</div>
+                                        <div className="gothic-700-32">4000 BNB</div>
+                                    </div>
+                                    <div className="text-left">
+                                        <div className="gothic-400-16 text-secondary">Hard Cap</div>
+                                        <div className="gothic-700-32">8000 BNB</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-one-container border-yellow middle-card">
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <div className="gothic-700-32 text-yellow">Phase Two</div>
+                                        <div className="text-black font-weight-bold">1BNB = 31,250 WNTR</div>
+                                    </div>
+                                    <div className="gothic-400-16 text-secondary">April 16th to April 23rd 2021</div>
+                                </div>
+                                <div className="text-left mt-3">
+                                    <div className="gothic-400-16 text-secondary">Available</div>
+                                    <h1 className="gothic-700-32">
+                                    500,000,000 WNTR
+                                    </h1>
+                                </div>
+                                <div className="c-price d-flex justify-content-between align-items-center mt-1">
+                                    <div className="text-left">
+                                        <div className="gothic-400-16 text-secondary">Soft Cap</div>
+                                        <div className="gothic-700-32">8000 BNB</div>
+                                    </div>
+                                    <div className="text-left">
+                                        <div className="gothic-400-16 text-secondary">Hard Cap</div>
+                                        <div className="gothic-700-32">16000 BNB</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-one-container border-green">
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <div className="gothic-700-32 text-green">Phase Three</div>
+                                        <div className="text-black font-weight-bold">1BNB= 25,000 $WNTR</div>
+                                    </div>
+                                    <div className="gothic-400-16 text-secondary">May 5th to May 15th 2021</div>
+                                </div>
+                                <div className="text-left mt-3">
+                                    <div className="gothic-400-16 text-secondary">Available</div>
+                                    <h1 className="gothic-700-32">
+                                    1,000,000,000 WNTR
+                                    </h1>
+                                </div>
+                                <div className="c-price d-flex justify-content-between align-items-center mt-1">
+                                    <div className="text-left">
+                                        <div className="gothic-400-16 text-secondary">Soft Cap</div>
+                                        <div className="gothic-700-32">20000 BNB</div>
+                                    </div>
+                                    <div className="text-left">
+                                        <div className="gothic-400-16 text-secondary">Hard Cap</div>
+                                        <div className="gothic-700-32">40000 BNB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="how-buy"></div>
+                    <Footer />
+                </div>
             </div>
         </div>
     );

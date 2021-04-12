@@ -188,5 +188,64 @@
             }
         }
     }
+    .overlap-with-footer {
+        background-color: #fafafa;
+        padding: 50px 0;
+        .withFooter {
+            background-image: url('../../assets/img/with-footer-bg.svg');
+            .presale {
+                .pre-detail {
+                    display: flex;
+                    justify-content: center;
+                    .pre-header {
+                        max-width: 40%;
+                        .presale-content {
+                            color: #434b63;
+                        }
+                    }
+                }
+                .pre-card-container {
+                    padding: 20px;
+                    display: flex;
+                    .card-one-container {
+                        border-top: 10px solid;
+                        border-radius: 10px;
+                        margin-right: 33px;
+                        width: 30%;
+                        padding: 23px;
+                        background-color: white;
+                        .c-price {
+                            position: relative;
+                            &::after {
+                                content: "|";
+                                color: #6c757d;
+                                opacity: 0.2;
+                                font-size: 43px;
+                                font-weight: 100;
+                                position: absolute;
+                                left: 50%;
+                            }
+                        }
+                    }
+                    .middle-card{
+                        position: relative;
+                        &::after {
+                            content: url('../../assets/img/round-green-arrow.svg');
+                            position: absolute;
+                            left: 90%;
+                            top: 30%;
+                        }
+                        &::before {
+                            content: url('../../assets/img/round-yellow-arrow.svg');
+                            position: absolute;
+                            left: -18%;
+                            top: 30%;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
     
 }

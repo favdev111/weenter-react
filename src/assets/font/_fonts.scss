@@ -24,6 +24,18 @@
     font-size: 48px !important;
     line-height: 54px !important;
 }
+.gothic-700-32 {
+    @include font-1;
+    font-weight: 700 !important;
+    font-size: 32px !important;
+    line-height: 42px !important;
+}
+.gothic-700-20 {
+    @include font-1;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+}
 .gothic-400-16 {
     @include font-1;
     font-weight: 400 !important;
