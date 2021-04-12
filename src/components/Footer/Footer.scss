@@ -1,0 +1,19 @@
+.footer-wrap {
+    padding: 50px 0px 80px 0px;
+    .page-link-list {
+        width: 70%;
+        margin: auto;
+        .link-one {
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            position: relative;
+            &::after {
+                content: "/";
+                color: white;
+                position: absolute;
+                opacity: 0.16;
+                right: 0;
+            }
+        }
+    }
+}

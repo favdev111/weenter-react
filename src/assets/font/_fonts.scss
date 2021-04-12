@@ -1,11 +1,69 @@
 @import url('https://fonts.googleapis.com/css?family=Century+Gothic:300,400,500,600,700');
+@font-face {
+    font-family: azo-light;
+    src: url('../font/azo-sans/AzoSans-Light.ttf');
+}
+@font-face {
+    font-family: azo-regular;
+    src: url('../font/azo-sans/AzoSans-Regular.ttf');
+}
+@font-face {
+    font-family: azo-medium;
+    src: url('../font/azo-sans/AzoSans-Medium.ttf');
+}
+@font-face {
+    font-family: azo-bold;
+    src: url('../font/azo-sans/AzoSans-Bold.ttf');
+}
+@font-face {
+    font-family: azo-black;
+    src: url('../font/azo-sans/AzoSans-Black.ttf');
+}
 
 // $font-1:'Century Gothic',sans-serif;
-
 @mixin font-1{
     font-family: 'Century Gothic';
 }
-
+.azo-700-16 {
+    font-family: azo-bold !important;
+    font-size: 16px !important;
+    line-height: 19.2px !important
+}
+.azo-700-18 {
+    font-family: azo-bold !important;
+    font-size: 18px !important;
+    line-height: 30px !important
+}
+.azo-700-12 {
+    font-family: azo-bold !important;
+    font-size: 12px !important;
+    line-height: 18px !important
+}
+.azo-700-32 {
+    font-family: azo-bold !important;
+    font-size: 32px !important;
+    line-height: 42px !important
+}
+.azo-500-16 {
+    font-family: azo-medium !important;
+    font-size: 16px !important;
+    line-height: 20px !important
+}
+.azo-400-16 {
+    font-family: azo-regular !important;
+    font-size: 16px !important;
+    line-height: 34px !important
+}
+.azo-400-18 {
+    font-family: azo-regular !important;
+    font-size: 18px !important;
+    line-height: 24px !important
+}
+.azo-400-16 {
+    font-family: azo-regular !important;
+    font-size: 16px !important;
+    line-height: 20px !important
+}
 .gothic-700-16 {
     @include font-1;
     font-weight: 700 !important;

@@ -3,6 +3,7 @@ import { Container, Button } from 'react-bootstrap';
 
 import './Home.scss';
 import {Footer} from '../../components/Footer/Footer';
+import '../../components/Footer/Footer.scss';
 import bannerImg from '../../assets/img/home-banner.svg';
 import creatorImg from '../../assets/img/creator-icon.svg';
 import holdersImg from '../../assets/img/holders-icon.svg';
@@ -128,12 +129,12 @@ function Home() {
                             </div>
                             <div className="card-content text-left">
                                 <div className="card-row">
-                                    <div className="text-green">01</div>
-                                    <div className="card-des">Team set-up</div>
+                                    <div className="text-green azo-700-12">01</div>
+                                    <div className="card-des azo-400-16">Team set-up</div>
                                 </div>
                                 <div className="card-row">
-                                    <div className="text-green">02</div>
-                                    <div className="card-des">Launch of informational website</div>
+                                    <div className="text-green azo-700-12">02</div>
+                                    <div className="card-des azo-400-16">Launch of informational website</div>
                                 </div>
                             </div>
                         </div>
@@ -146,24 +147,24 @@ function Home() {
                             </div>
                             <div className="card-content text-left">
                                 <div className="card-row">
-                                    <div className="text-blue">01</div>
-                                    <div className="card-des">Presale and exchange listings</div>
+                                    <div className="text-blue azo-700-12">01</div>
+                                    <div className="card-des azo-400-16">Presale and exchange listings</div>
                                 </div>
                                 <div className="card-row">
-                                    <div className="text-blue">02</div>
-                                    <div className="card-des">Blockchain development and launch</div>
+                                    <div className="text-blue azo-700-12">02</div>
+                                    <div className="card-des azo-400-16">Blockchain development and launch</div>
                                 </div>
                                 <div className="card-row">
-                                    <div className="text-blue">03</div>
-                                    <div className="card-des">Launch of our MVP</div>
+                                    <div className="text-blue azo-700-12">03</div>
+                                    <div className="card-des azo-400-16">Launch of our MVP</div>
                                 </div>
                                 <div className="card-row">
-                                    <div className="text-blue">04</div>
-                                    <div className="card-des">Influencer agency partnerships</div>
+                                    <div className="text-blue azo-700-12">04</div>
+                                    <div className="card-des azo-400-16">Influencer agency partnerships</div>
                                 </div>
                                 <div className="card-row">
-                                    <div className="text-blue">05</div>
-                                    <div className="card-des">Marketing and promotion</div>
+                                    <div className="text-blue azo-700-12">05</div>
+                                    <div className="card-des azo-400-16">Marketing and promotion</div>
                                 </div>
                             </div>
                         </div>
@@ -176,16 +177,16 @@ function Home() {
                             </div>
                             <div className="card-content text-left">
                                 <div className="card-row">
-                                    <div className="text-yellow">01</div>
-                                    <div className="card-des">Celebrity, Creator and Influencer partnerships</div>
+                                    <div className="text-yellow azo-700-12">01</div>
+                                    <div className="card-des azo-400-16">Celebrity, Creator and Influencer partnerships</div>
                                 </div>
                                 <div className="card-row">
-                                    <div className="text-yellow">02</div>
-                                    <div className="card-des">Expansion of creator communities on our platform</div>
+                                    <div className="text-yellow azo-700-12">02</div>
+                                    <div className="card-des azo-400-16">Expansion of creator communities on our platform</div>
                                 </div>
                                 <div className="card-row">
-                                    <div className="text-yellow">03</div>
-                                    <div className="card-des">More Marketing and promotion</div>
+                                    <div className="text-yellow azo-700-12">03</div>
+                                    <div className="card-des azo-400-16">More Marketing and promotion</div>
                                 </div>
                             </div>
                         </div>
@@ -198,20 +199,20 @@ function Home() {
                             </div>
                             <div className="card-content text-left">
                                 <div className="card-row">
-                                    <div className="text-red">01</div>
-                                    <div className="card-des">Mainstream partnerships</div>
+                                    <div className="text-red azo-700-12">01</div>
+                                    <div className="card-des azo-400-16">Mainstream partnerships</div>
                                 </div>
                                 <div className="card-row">
-                                    <div className="text-red">02</div>
-                                    <div className="card-des">500 active creator communitiesh</div>
+                                    <div className="text-red azo-700-12">02</div>
+                                    <div className="card-des azo-400-16">500 active creator communitiesh</div>
                                 </div>
                                 <div className="card-row">
-                                    <div className="text-red">03</div>
-                                    <div className="card-des">2 Million active community members</div>
+                                    <div className="text-red azo-700-12">03</div>
+                                    <div className="card-des azo-400-16">2 Million active community members</div>
                                 </div>
                                 <div className="card-row">
-                                    <div className="text-red">04</div>
-                                    <div className="card-des">More Marketing and promotion</div>
+                                    <div className="text-red azo-700-12">04</div>
+                                    <div className="card-des azo-400-16">More Marketing and promotion</div>
                                 </div>
                             </div>
                         </div>
@@ -266,24 +267,24 @@ function Home() {
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div>
                                         <div className="gothic-700-32 text-blue">Phase One</div>
-                                        <div className="text-black font-weight-bold">1BNB = 56,250 WNTR</div>
+                                        <div className="text-black azo-500-16">1BNB = 56,250 WNTR</div>
                                     </div>
-                                    <div className="gothic-400-16 text-secondary">April 16th to April 23rd 2021</div>
+                                    <div className="azo-400-16 text-secondary">April 16th to April 23rd 2021</div>
                                 </div>
                                 <div className="text-left mt-3">
-                                    <div className="gothic-400-16 text-secondary">Available</div>
-                                    <h1 className="gothic-700-32">
+                                    <div className="azo-400-16 text-secondary">Available</div>
+                                    <h1 className="azo-700-32">
                                     450,000,000 WNTR
                                     </h1>
                                 </div>
                                 <div className="c-price d-flex justify-content-between align-items-center mt-1">
                                     <div className="text-left">
-                                        <div className="gothic-400-16 text-secondary">Soft Cap</div>
-                                        <div className="gothic-700-32">4000 BNB</div>
+                                        <div className="azo-400-16 text-secondary">Soft Cap</div>
+                                        <div className="azo-700-32">4000 BNB</div>
                                     </div>
                                     <div className="text-left">
-                                        <div className="gothic-400-16 text-secondary">Hard Cap</div>
-                                        <div className="gothic-700-32">8000 BNB</div>
+                                        <div className="azo-400-16 text-secondary">Hard Cap</div>
+                                        <div className="azo-700-32">8000 BNB</div>
                                     </div>
                                 </div>
                             </div>
@@ -291,24 +292,24 @@ function Home() {
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div>
                                         <div className="gothic-700-32 text-yellow">Phase Two</div>
-                                        <div className="text-black font-weight-bold">1BNB = 31,250 WNTR</div>
+                                        <div className="text-black azo-500-16">1BNB = 31,250 WNTR</div>
                                     </div>
-                                    <div className="gothic-400-16 text-secondary">April 16th to April 23rd 2021</div>
+                                    <div className="azo-400-16 text-secondary">April 16th to April 23rd 2021</div>
                                 </div>
                                 <div className="text-left mt-3">
-                                    <div className="gothic-400-16 text-secondary">Available</div>
-                                    <h1 className="gothic-700-32">
+                                    <div className="azo-400-16 text-secondary">Available</div>
+                                    <h1 className="azo-700-32">
                                     500,000,000 WNTR
                                     </h1>
                                 </div>
                                 <div className="c-price d-flex justify-content-between align-items-center mt-1">
                                     <div className="text-left">
-                                        <div className="gothic-400-16 text-secondary">Soft Cap</div>
-                                        <div className="gothic-700-32">8000 BNB</div>
+                                        <div className="azo-400-16 text-secondary">Soft Cap</div>
+                                        <div className="azo-700-32">8000 BNB</div>
                                     </div>
                                     <div className="text-left">
-                                        <div className="gothic-400-16 text-secondary">Hard Cap</div>
-                                        <div className="gothic-700-32">16000 BNB</div>
+                                        <div className="azo-400-16 text-secondary">Hard Cap</div>
+                                        <div className="azo-700-32">16000 BNB</div>
                                     </div>
                                 </div>
                             </div>
@@ -316,24 +317,24 @@ function Home() {
                                 <div className="d-flex justify-content-between align-items-center">
                                     <div>
                                         <div className="gothic-700-32 text-green">Phase Three</div>
-                                        <div className="text-black font-weight-bold">1BNB= 25,000 $WNTR</div>
+                                        <div className="text-black azo-500-16">1BNB= 25,000 $WNTR</div>
                                     </div>
-                                    <div className="gothic-400-16 text-secondary">May 5th to May 15th 2021</div>
+                                    <div className="azo-400-16 text-secondary">May 5th to May 15th 2021</div>
                                 </div>
                                 <div className="text-left mt-3">
-                                    <div className="gothic-400-16 text-secondary">Available</div>
-                                    <h1 className="gothic-700-32">
+                                    <div className="azo-400-16 text-secondary">Available</div>
+                                    <h1 className="azo-700-32">
                                     1,000,000,000 WNTR
                                     </h1>
                                 </div>
                                 <div className="c-price d-flex justify-content-between align-items-center mt-1">
                                     <div className="text-left">
-                                        <div className="gothic-400-16 text-secondary">Soft Cap</div>
-                                        <div className="gothic-700-32">20000 BNB</div>
+                                        <div className="azo-400-16 text-secondary">Soft Cap</div>
+                                        <div className="azo-700-32">20000 BNB</div>
                                     </div>
                                     <div className="text-left">
-                                        <div className="gothic-400-16 text-secondary">Hard Cap</div>
-                                        <div className="gothic-700-32">40000 BNB</div>
+                                        <div className="azo-400-16 text-secondary">Hard Cap</div>
+                                        <div className="azo-700-32">40000 BNB</div>
                                     </div>
                                 </div>
                             </div>
@@ -352,7 +353,7 @@ function Home() {
                                                 </div>
                                                 <div className="service-text">
                                                     <h2 className="gothic-700-26 text-white">Connect</h2>
-                                                    <div className="text-white">
+                                                    <div className="text-white azo-400-18">
                                                         First Connect your Metamask or TrustWallet to the "Connect Wallet" on the 
                                                         Homepage.
                                                     </div>
@@ -364,12 +365,12 @@ function Home() {
                                                 </div>
                                                 <div className="service-text">
                                                     <h2 className="gothic-700-26 text-white">Top Up</h2>
-                                                    <div className="text-white">
+                                                    <div className="text-white azo-400-18">
                                                         Then send minimum of 0.1 BNB or maximum of 20 BNB to the Presale wallet
                                                     </div>
                                                     <p className="mt-2">
-                                                        <span className="text-green">PRESALE WALLET</span> <br/>
-                                                        <span className="text-white">0xCd35fa70CD2111985ae6F77c939b516f248e6935</span>
+                                                        <span className="text-green azo-700-18 ">PRESALE WALLET</span> <br/>
+                                                        <span className="text-white azo-700-18 ">0xCd35fa70CD2111985ae6F77c939b516f248e6935</span>
                                                     </p>
                                                 </div>
                                             </div>
@@ -379,7 +380,7 @@ function Home() {
                                                 </div>
                                                 <div className="service-text">
                                                     <h2 className="gothic-700-26 text-white">Enjoy</h2>
-                                                    <div className="text-white">
+                                                    <div className="text-white azo-400-18">
                                                     Then after you will received your $WNTR to your address within 24hours.                                                     </div>
                                                 </div>
                                             </div>
