@@ -13,6 +13,8 @@ import roadGreen from '../../assets/img/road-green.svg';
 import roadBlue from '../../assets/img/road-blue.svg';
 import roadYellow from '../../assets/img/road-yellow.svg';
 import roadRed from '../../assets/img/road-red.svg';
+import logoMark from '../../assets/img/logo-mark.svg';
+import comingImg from '../../assets/img/coming-img.svg';
 
 function Home() {
     return (
@@ -213,6 +215,32 @@ function Home() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="home-coming">
+                <Container>
+                    <div className="row">
+                        <div className="coming-text col-md-6 text-left">
+                            <div className="coming-title">
+                                <div>
+                                    <img src={logoMark} alt="" />
+                                </div>
+                                <h1 className="gothic-700-48 ml-4"><span>Weentar</span> is coming</h1>
+                            </div>
+                            <div className="coming-content">
+                                Traditional social media platforms have become the arenas of the big dogs. There is a small “elite” who takes 95% (or even more!) of the
+                                spoils while average creators only receive a quantum of the reward they actually deserve. The reason for this is that these platforms have
+                                been hijacked by advertisers and marketers. Even consumers are “working” for free on these platforms by providing their valuable personal
+                                data without seeing a penny in return.
+
+                                Weentar targets this problem by building a platform that provides creators and their communities both: full control over their data as well as their reward
+                                system for monetizing intellectual property.
+                    </div>
+                        </div>
+                        <div className="coming-img col-md-6">
+                            <img src={comingImg} className="w-50" />
+                        </div>
+                    </div>
+                </Container>
             </div>
         </div>
     );
