@@ -43,8 +43,38 @@ function Footer() {
                     </div>
                     <div className="social-list">
                         <div className="social-one">
-                            <img src="" alt=""/>
+                            <a href="#">
+                                <img src={twitterImg} alt=""/>
+                            </a>
                         </div>
+                        <div className="social-one">
+                            <a href="#">
+                                <img src={facebookImg} alt=""/>
+                            </a>
+                        </div>
+                        <div className="social-one">
+                            <a href="#">
+                                <img src={instagramImg} alt=""/>
+                            </a>
+                        </div>
+                        <div className="social-one">
+                            <a href="#">
+                                <img src={mediumImg} alt=""/>
+                            </a>
+                        </div>
+                        <div className="social-one">
+                            <a href="#">
+                                <img src={githubImg} alt=""/>
+                            </a>
+                        </div>
+                        <div className="social-one">
+                            <a href="#">
+                                <img src={redditImg} alt=""/>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="copyRight azo-400-14 text-white">
+                        © 2021 Weentar. All rights reserved.
                     </div>
                 </div>
             </Container>

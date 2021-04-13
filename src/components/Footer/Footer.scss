@@ -16,4 +16,20 @@
             }
         }
     }
+    .end-line {
+        padding-top: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .social-list {
+            display: flex;
+            align-items: center;
+            .social-one {
+                margin-right: 5px;
+                padding: 10px 12px;
+                border-radius: 50%;
+                border: 2px solid rgba(255,255,255,0.05);
+            }
+        }
+    }
 }

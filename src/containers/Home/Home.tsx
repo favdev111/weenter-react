@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 
 import './Home.scss';
-import {Footer} from '../../components/Footer/Footer';
+import { Footer } from '../../components/Footer/Footer';
 import '../../components/Footer/Footer.scss';
 import bannerImg from '../../assets/img/home-banner.svg';
 import creatorImg from '../../assets/img/creator-icon.svg';
@@ -22,9 +22,9 @@ import serviceImg from '../../assets/img/service-img.svg';
 function Home() {
     return (
         <div className="home-container">
-            <div className="home-banner container">
-                <div className="row">
-                    <div className="title-container col-md-5">
+            <div className="home-banner">
+                <div className="banner-wrap">
+                    <div className="title-container">
                         <p className="gothic-700-16 text-green">At Weentar we are</p>
                         <h1 className="gothic-700-48 text-white"> Reimagining social media through the power of the blockchain.</h1>
                         <h6 className="gothic-700-16 text-gray">We are creating social media 3.0 with influencers, celebrities and creators being able to
@@ -35,7 +35,7 @@ function Home() {
                             <a href="" className="gothic-700-16 text-white">Read Lightpaper</a>
                         </div>
                     </div>
-                    <div className="image-container col-md-7">
+                    <div className="image-container">
                         <img src={bannerImg} />
                     </div>
                 </div>
@@ -59,20 +59,20 @@ function Home() {
                                         and engagement with their community. On top of this, creators build their content as NFTs which they distribute through
                                         their own ecosystem with their digital currency being the backbone of that system.
                                     </div>
-                                    <a href="" className="text-green .gothic-700-16">Learn More</a>
+                                    <a href="" className="text-green gothic-700-16">Learn More</a>
                                     <img src={rightArrowImg} className="arrow-icon" alt="" />
                                 </div>
                             </div>
                             <div className="col-sm-6">
                                 <div className="creator-wrap">
                                     <img src={holdersImg} alt="" />
-                                    <h1 className="gothic-700-36">For <a href="" className="text-blue">Creators</a></h1>
+                                    <h1 className="gothic-700-36">For <a href="" className="text-blue">Holders</a></h1>
                                     <div className="card-content gothic-400-16">
                                         Creators can gain independence through a decentralized personal digital currency system that is linked with their growth
                                         and engagement with their community. On top of this, creators build their content as NFTs which they distribute through
                                         their own ecosystem with their digital currency being the backbone of that system.
                                     </div>
-                                    <a href="" className="text-blue .gothic-700-16">Learn More</a>
+                                    <a href="" className="text-blue gothic-700-16">Learn More</a>
                                     <img src={rightArrowBlueImg} className="arrow-icon" alt="" />
                                 </div>
                             </div>
@@ -89,7 +89,7 @@ function Home() {
                         </div>
                         <div className="col-md-6">
                             <div className="dec-content text-left">
-                                <h1 className="gothic-700-48 text-white">Decentralized social media would be led by <span>celebrities</span></h1>
+                                <h1 className="gothic-700-48 text-white mb-5">Decentralized social media would be led by <span>celebrities</span></h1>
                                 <p className="gothic-400-16">One of the things that we understand deeply at Weentar is that real adoption happens when the
                                 relevant people campaign for it. Our strategy to become the top social media 3.0 platform will
                                 be our campaign to onboard celebrities, influencers and creators of all genres in various countries
@@ -102,13 +102,13 @@ function Home() {
                     <div className="row">
                         <div className="col-md-6">
                             <div className="dec-content text-left">
-                                <h1 className="gothic-700-48 text-white">Market size</h1>
+                                <h1 className="gothic-700-48 text-white mb-5">Market size</h1>
                                 <p className="gothic-400-16">There are over 50 million self identified creators in the social media space. Over a million of
                                 these are celebrities in different countries around the world. What does this mean? It means that there is a potential for
                                 50 million communities on Weentar. A bullet proof concept and the right publicity might lead to a vast majority of these 50
                                 million joining the platform by the end of the decade. Once the superiority of our platform is recognised by the right minds,
                                  the growth of the platform tends to become exponential.</p>
-                                <button className="btn-green gothic-700-16">Connect wallet</button>
+                                <button className="btn-green gothic-700-16 mt-3">Connect wallet</button>
                             </div>
                         </div>
                         <div className="col-md-6">
@@ -117,6 +117,7 @@ function Home() {
 
                     </div>
                 </div>
+                <div className="cut-triangle"></div>
             </div>
             <div className="road-map">
                 <h1 className="gothic-700-48">Road map</h1>
@@ -252,7 +253,7 @@ function Home() {
                             <div className="pre-header">
                                 <h1 className="gothic-700-48">Presale details</h1>
                                 <div className="presale-content gothic-400-16">
-                                    We have a supply of 1.950.000.000 tokens for the ICO which should be distributed through 3 phases. The 
+                                    We have a supply of 1.950.000.000 tokens for the ICO which should be distributed through 3 phases. The
                                     following list depicts the initial plan of how to distribute tokens over the 3 phases on how to price the
                                     token during each phase. If the first phase will be a huge success, we might increase the price per token in later phases
                                 </div>
@@ -263,81 +264,92 @@ function Home() {
                             </div>
                         </div>
                         <div className="pre-card-container">
-                            <div className="card-one-container border-blue">
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <div className="gothic-700-32 text-blue">Phase One</div>
-                                        <div className="text-black azo-500-16">1BNB = 56,250 WNTR</div>
-                                    </div>
-                                    <div className="azo-400-16 text-secondary">April 16th to April 23rd 2021</div>
-                                </div>
-                                <div className="text-left mt-3">
-                                    <div className="azo-400-16 text-secondary">Available</div>
-                                    <h1 className="azo-700-32">
-                                    450,000,000 WNTR
+                            <Container>
+                                <div className="row">
+                                    <div className="col-md-4">
+                                        <div className="card-one-container border-blue">
+                                            <div className="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <div className="gothic-700-32 text-blue">Phase One</div>
+                                                    <div className="text-black azo-500-16">1BNB = 56,250 WNTR</div>
+                                                </div>
+                                                <div className="azo-400-16 text-secondary">April 16th to April 23rd 2021</div>
+                                            </div>
+                                            <div className="text-left mt-3">
+                                                <div className="azo-400-16 text-secondary">Available</div>
+                                                <h1 className="azo-700-32">
+                                                    450,000,000 WNTR
                                     </h1>
-                                </div>
-                                <div className="c-price d-flex justify-content-between align-items-center mt-1">
-                                    <div className="text-left">
-                                        <div className="azo-400-16 text-secondary">Soft Cap</div>
-                                        <div className="azo-700-32">4000 BNB</div>
+                                            </div>
+                                            <div className="c-price d-flex justify-content-between align-items-center mt-1">
+                                                <div className="text-left">
+                                                    <div className="azo-400-16 text-secondary">Soft Cap</div>
+                                                    <div className="azo-700-32">4000 BNB</div>
+                                                </div>
+                                                <div className="text-left">
+                                                    <div className="azo-400-16 text-secondary">Hard Cap</div>
+                                                    <div className="azo-700-32">8000 BNB</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="text-left">
-                                        <div className="azo-400-16 text-secondary">Hard Cap</div>
-                                        <div className="azo-700-32">8000 BNB</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card-one-container border-yellow middle-card">
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <div className="gothic-700-32 text-yellow">Phase Two</div>
-                                        <div className="text-black azo-500-16">1BNB = 31,250 WNTR</div>
-                                    </div>
-                                    <div className="azo-400-16 text-secondary">April 16th to April 23rd 2021</div>
-                                </div>
-                                <div className="text-left mt-3">
-                                    <div className="azo-400-16 text-secondary">Available</div>
-                                    <h1 className="azo-700-32">
-                                    500,000,000 WNTR
+                                    <div className="col-md-4">
+                                        <div className="card-one-container border-yellow middle-card">
+                                            <div className="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <div className="gothic-700-32 text-yellow">Phase Two</div>
+                                                    <div className="text-black azo-500-16">1BNB = 31,250 WNTR</div>
+                                                </div>
+                                                <div className="azo-400-16 text-secondary">April 16th to April 23rd 2021</div>
+                                            </div>
+                                            <div className="text-left mt-3">
+                                                <div className="azo-400-16 text-secondary">Available</div>
+                                                <h1 className="azo-700-32">
+                                                    500,000,000 WNTR
                                     </h1>
-                                </div>
-                                <div className="c-price d-flex justify-content-between align-items-center mt-1">
-                                    <div className="text-left">
-                                        <div className="azo-400-16 text-secondary">Soft Cap</div>
-                                        <div className="azo-700-32">8000 BNB</div>
+                                            </div>
+                                            <div className="c-price d-flex justify-content-between align-items-center mt-1">
+                                                <div className="text-left">
+                                                    <div className="azo-400-16 text-secondary">Soft Cap</div>
+                                                    <div className="azo-700-32">8000 BNB</div>
+                                                </div>
+                                                <div className="text-left">
+                                                    <div className="azo-400-16 text-secondary">Hard Cap</div>
+                                                    <div className="azo-700-32">16000 BNB</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="text-left">
-                                        <div className="azo-400-16 text-secondary">Hard Cap</div>
-                                        <div className="azo-700-32">16000 BNB</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="card-one-container border-green">
-                                <div className="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <div className="gothic-700-32 text-green">Phase Three</div>
-                                        <div className="text-black azo-500-16">1BNB= 25,000 $WNTR</div>
-                                    </div>
-                                    <div className="azo-400-16 text-secondary">May 5th to May 15th 2021</div>
-                                </div>
-                                <div className="text-left mt-3">
-                                    <div className="azo-400-16 text-secondary">Available</div>
-                                    <h1 className="azo-700-32">
-                                    1,000,000,000 WNTR
+                                    <div className="col-md-4">
+                                        <div className="card-one-container border-green">
+                                            <div className="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <div className="gothic-700-32 text-green">Phase Three</div>
+                                                    <div className="text-black azo-500-16">1BNB= 25,000 $WNTR</div>
+                                                </div>
+                                                <div className="azo-400-16 text-secondary">May 5th to May 15th 2021</div>
+                                            </div>
+                                            <div className="text-left mt-3">
+                                                <div className="azo-400-16 text-secondary">Available</div>
+                                                <h1 className="azo-700-32">
+                                                    1,000,000,000 WNTR
                                     </h1>
-                                </div>
-                                <div className="c-price d-flex justify-content-between align-items-center mt-1">
-                                    <div className="text-left">
-                                        <div className="azo-400-16 text-secondary">Soft Cap</div>
-                                        <div className="azo-700-32">20000 BNB</div>
+                                            </div>
+                                            <div className="c-price d-flex justify-content-between align-items-center mt-1">
+                                                <div className="text-left">
+                                                    <div className="azo-400-16 text-secondary">Soft Cap</div>
+                                                    <div className="azo-700-32">20000 BNB</div>
+                                                </div>
+                                                <div className="text-left">
+                                                    <div className="azo-400-16 text-secondary">Hard Cap</div>
+                                                    <div className="azo-700-32">40000 BNB</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="text-left">
-                                        <div className="azo-400-16 text-secondary">Hard Cap</div>
-                                        <div className="azo-700-32">40000 BNB</div>
-                                    </div>
                                 </div>
-                            </div>
+                            </Container>
+
                         </div>
                     </div>
                     <div className="how-buy">
@@ -354,7 +366,7 @@ function Home() {
                                                 <div className="service-text">
                                                     <h2 className="gothic-700-26 text-white">Connect</h2>
                                                     <div className="text-white azo-400-18">
-                                                        First Connect your Metamask or TrustWallet to the "Connect Wallet" on the 
+                                                        First Connect your Metamask or TrustWallet to the "Connect Wallet" on the
                                                         Homepage.
                                                     </div>
                                                 </div>
@@ -369,7 +381,7 @@ function Home() {
                                                         Then send minimum of 0.1 BNB or maximum of 20 BNB to the Presale wallet
                                                     </div>
                                                     <p className="mt-2">
-                                                        <span className="text-green azo-700-18 ">PRESALE WALLET</span> <br/>
+                                                        <span className="text-green azo-700-18 ">PRESALE WALLET</span> <br />
                                                         <span className="text-white azo-700-18 ">0xCd35fa70CD2111985ae6F77c939b516f248e6935</span>
                                                     </p>
                                                 </div>
@@ -381,7 +393,7 @@ function Home() {
                                                 <div className="service-text">
                                                     <h2 className="gothic-700-26 text-white">Enjoy</h2>
                                                     <div className="text-white azo-400-18">
-                                                    Then after you will received your $WNTR to your address within 24hours.                                                     </div>
+                                                        Then after you will received your $WNTR to your address within 24hours.                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -389,7 +401,7 @@ function Home() {
                                 </div>
                                 <div className="col-md-7">
                                     <div className="service-img">
-                                        <img src={serviceImg} alt=""/>
+                                        <img src={serviceImg} alt="" />
                                     </div>
                                 </div>
                             </div>

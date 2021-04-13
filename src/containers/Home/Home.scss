@@ -1,27 +1,32 @@
 .home-container {
     .home-banner {
-        padding: 20px 20px 0 20px;
-        .title-container {
-            text-align: left;
+        padding-top: 20px;
+        .banner-wrap {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            h6 {
-                color: #dde2ff;
-                opacity: 0.6;
-                margin-bottom: 20px;
+            .title-container {
+                width: 40%;
+                padding-left: 140px;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h6 {
+                    color: #dde2ff;
+                    opacity: 0.6;
+                    margin-bottom: 20px;
+                }
+                button {
+                    border-radius: 25px;
+                    padding: 10px 18px;
+                    border-color: transparent !important;
+                    margin-right: 20px;
+                }
             }
-            button {
-                border-radius: 25px;
-                padding: 10px 18px;
-                border-color: transparent !important;
-                margin-right: 20px;
-            }
-        }
-        .image-container {
-            img {
-                width: 100%;
-                margin-right: -40px;
+            .image-container {
+                width: 60%;
+                img {
+                    width: 100%;
+                }
             }
         }
     }
@@ -55,7 +60,7 @@
                 border-radius: 25px;
                 box-shadow: 0px 12px 22px rgba(96, 132, 201, 0.28);
                 text-align: left;
-                padding: 30px 60px 30px 30px;
+                padding: 40px 60px 30px 50px;
                 .card-content {
                     color: #0f1320;
                     opacity: 0.5;
@@ -73,35 +78,51 @@
     }
     .home-intro {
         background-image: url('../../assets/img/intro-bg.svg');
-        padding: 30px;
-        .dec-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-            h1{
-                span{
-                    position: relative;
-                    &:after {
-                        content: url('../../assets/img/green-circles.svg');
-                        position: absolute;
-                        right: -25px;
-                        top: -3px;
+        padding-top: 30px;
+        padding-bottom: 200px;
+        position: relative;
+        .dec-container {
+            padding: 15px;
+            .dec-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                width: 80%;
+                margin: auto;
+                h1{
+                    span{
+                        position: relative;
+                        &:after {
+                            content: url('../../assets/img/green-circles.svg');
+                            position: absolute;
+                            right: -25px;
+                            top: -3px;
+                        }
                     }
                 }
+                p {
+                    opacity: 0.8;
+                    color: #dde2ff;
+                }
+                button {
+                    border-radius: 25px;
+                    padding: 10px 18px;
+                    border-color: transparent !important;
+                    margin-right: 20px;
+                    width: 180px;
+                }
+                
             }
-            p {
-                opacity: 0.8;
-                color: #dde2ff;
-            }
-            button {
-                border-radius: 25px;
-                padding: 10px 18px;
-                border-color: transparent !important;
-                margin-right: 20px;
-                width: 180px;
-            }
-            
+        }
+        .cut-triangle {
+            border-bottom: 1px solid #fafafa;
+            width: 100%;
+            height: 200px;
+            background-color: #fafafa;
+            position: absolute;
+            bottom: 0%;
+            clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0 100%, 0 0);
         }
     }
     .road-map {
@@ -193,6 +214,9 @@
         padding-top: 50px;
         .withFooter {
             background-image: url('../../assets/img/with-footer-bg.svg');
+            background-position: 50% 65px;
+            background-size: cover;
+            background-repeat: no-repeat;
             .presale {
                 .pre-detail {
                     display: flex;
@@ -205,13 +229,12 @@
                     }
                 }
                 .pre-card-container {
-                    padding: 20px;
-                    display: flex;
+                    margin-top: 30px;
+                    padding: 15px;
+                    padding-left: 30px;
                     .card-one-container {
                         border-top: 10px solid;
                         border-radius: 10px;
-                        margin-right: 33px;
-                        width: 30%;
                         padding: 23px;
                         background-color: white;
                         .c-price {
